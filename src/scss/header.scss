@@ -1,13 +1,12 @@
 //====================================================================================================
 .header {
-	background-color: $mainWhiteColor;
 	@include adaptiveValue("padding-top", 40, 20);
 	@include adaptiveValue("padding-bottom", 40, 20);
 	position: sticky;
     z-index: 100;
     top: 0;
     backdrop-filter: blur(30px);
-    background-color: rgba($mainWhiteColor,.4);
+    background-color: rgba(#fff,.4);
 	&__container {
 		display: flex;
 		align-items: center;
