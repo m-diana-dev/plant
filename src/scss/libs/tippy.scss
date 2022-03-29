@@ -6,7 +6,7 @@
 }
 .tippy-box {
 	position: relative;
-	background-color: #333;
+	background: rgba(6, 111, 20, 0.7);
 	color: #fff;
 	border-radius: 4px;
 	font-size: 14px;
@@ -68,6 +68,9 @@
 }
 .tippy-content {
 	position: relative;
-	padding: 5px 9px;
+	padding: 16px 32px;
 	z-index: 1;
+	@media (max-width:370px){
+		padding: 5px 10px;
+	}
 }

@@ -76,11 +76,11 @@ import * as flsForms from "./files/forms/forms.js";
 
 /* Работа с полями формы */
 /* Документация: https://template.fls.guru/template-docs/rabota-s-formami.html */
-// flsForms.formFieldsInit({ viewPass: false });
+flsForms.formFieldsInit({ viewPass: false });
 
 /* Oтправка формы */
 /* Документация: https://template.fls.guru/template-docs/rabota-s-formami.html */
-// flsForms.formSubmit();
+flsForms.formSubmit();
 
 /* Модуль формы "колличество" */
 // flsForms.formQuantity();
@@ -116,7 +116,7 @@ import * as flsForms from "./files/forms/forms.js";
 Документация плагина: https://atomiks.github.io/tippyjs/
 Сниппет (HTML): tip (добавляет атрибут с подсказкой для html тега)
 */
-// import "./files/tippy.js";
+import "./files/tippy.js";
 
 // ========================================================================================================================================================================================================================================================
 // Работа со слайдером (Swiper) ========================================================================================================================================================================================================================================================

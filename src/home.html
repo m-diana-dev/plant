@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head.htm',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="page__main-block main-block">
+				<div class="main-block__container">
+					<div class="main-block__content content-main-block">
+						<div class="content-main-block__title">
+							Выращивание красивых растений дома
+						</div>
+						<div class="content-main-block__text">
+							Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Выйти,
+							вскоре ее все толку текста своих великий, вопрос домах большого, пустился его семь щеке
+							родного имеет рекламных несколько взобравшись!
+						</div>
+						<a href="#" class="button content-main-block__button">Узнать больше</a>
+						<div class="content-main-block__advantages advantages">
+							<div class="advantages__item item-advantages">
+								<div class="item-advantages__title">2000+</div>
+								<div class="item-advantages__text">Доставок</div>
+							</div>
+							<div class="advantages__item item-advantages">
+								<div class="item-advantages__title">1200+</div>
+								<div class="item-advantages__text">Клиентов</div>
+							</div>
+							<div class="advantages__item item-advantages">
+								<div class="item-advantages__title">1000+</div>
+								<div class="item-advantages__text">Продуктов</div>
+							</div>
+						</div>
+					</div>
+					<div class="main-block__media media-main-block">
+						<div class="media-main-block__body">
+							<div class="media-main-block__image">
+								<img src="@img/main-block/main.png" alt="Картинка">
+							</div>
+							<div class="media-main-block__tips">
+								<div data-tippy-content="Колючка кактуса"
+									class="media-main-block__tip media-main-block__tip_1"></div>
+								<div data-tippy-content="Стебель кактуса"
+									class="media-main-block__tip media-main-block__tip_2"></div>
+								<div data-tippy-content="Растительная среда"
+									class="media-main-block__tip media-main-block__tip_3"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
 </html>

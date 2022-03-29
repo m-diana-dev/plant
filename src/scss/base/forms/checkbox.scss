@@ -15,6 +15,7 @@
 		&:checked + .checkbox__label:before {
 			background: $mainGreen;
 			color: #fff;
+			border-color: $mainGreen;
 		}
 	}
 	// .checkbox__label
@@ -37,7 +38,7 @@
 			flex: 0 0 15px;
 			width: 15px;
 			height: 15px;
-			border: 1px solid #a7a9ac;
+			border: 1px solid $mainColor;
 			border-radius: 2px;
 			transition: all 0.3s;
 		}
