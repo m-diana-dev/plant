@@ -1,6 +1,7 @@
 //<FORM>
 // Снипет (HTML):
 .form {
+	max-width: rem(800);
 	&__row {
 	}
 	&__column {
@@ -18,15 +19,15 @@
 
 // <BUTTONS>
 // Снипет (HTML): btn
-// @import "button";
+@import "button";
 
 // <INPUTS>
 // Снипет (HTML): inp
-// @import "input";
+@import "input";
 
 // <CHECK>
 // Снипет (HTML): chk
-// @import "checkbox";
+@import "checkbox";
 
 // <RADIO>
 // Снипет (HTML): opt

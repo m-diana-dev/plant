@@ -50,12 +50,44 @@ body::after {
 	visibility: hidden;
 	transform: scale(0);
 	transition: transform 0.3s ease 0s;
-	background-color: #eee;
-	padding: 20px;
+	background-color: $mainWhiteColor;
+	padding: 35px 20px 20px 20px;
 	width: 100%;
 	max-width: 900px;
 	border-radius: 20px;
+	text-align: center;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 	.lock & {
 		visibility: visible;
+	}
+}
+.popup__form{
+	text-align: center;
+	width: 100%;
+}
+.popup__close{
+	position: absolute;
+	top: rem(20);
+	right: rem(20);
+	&::before{
+		font-size: rem(20);
+		color: $titleColor;
+	}
+}
+.popup__title{
+	font-family: 'Nunito';
+	font-weight: 700;
+	@include adaptiveValue("font-size", 40, 34);
+	line-height: math.div(50,40);
+	color: $titleColor;
+	text-align: center;
+	@include adaptiveValue("margin-bottom", 40, 20);
+}
+.popup__button{
+	font-size: rem(18);
+	@media (max-width:$mobile){
+		width: 100%;
 	}
 }

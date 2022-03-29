@@ -11,12 +11,20 @@ textarea {
 .input {
 	border-radius: 0 !important;
 	width: 100%;
+	height: rem(40);
+	border-radius: 6px;
 	display: block;
 	padding: 0px 20px;
 	border: 1px solid #eee;
+	font-weight: 500;
+	font-size: rem(18);
+	line-height: 160%;
 	&._form-focus {
 	}
 	&._form-error {
+	}
+	&:not(:last-child){
+		@include adaptiveValue("margin-bottom", 15, 10);
 	}
 }
 textarea.input {

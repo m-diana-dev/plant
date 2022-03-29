@@ -1,10 +1,37 @@
-<!-- <div id="popup" aria-hidden="true" class="popup">
+<div id="login" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
-			</div>
+			<button data-close type="button" class="popup__close _icon-close"></button>
+			<div class="popup__title">Авторизация</div>
+			<form action="" class="popup__form form">
+				<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Имя пользователя"
+					class="input">
+				<input autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder="Пароль"
+					class="input">
+				<button type="submit" class="button popup__button">Войти</button>
+			</form>
 		</div>
 	</div>
-</div> -->
+</div>
+<div id="signup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close _icon-close"></button>
+			<div class="popup__title">Регистрация</div>
+			<form action="" class="popup__form form">
+				<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Имя пользователя"
+					class="input">
+				<input autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder="Пароль"
+					class="input">
+				<input autocomplete="off" type="password" name="form[]" data-error="Ошибка"
+					placeholder="Повторить пароль" class="input">
+				<div class="checkbox">
+					<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+					<label for="c_1" class="checkbox__label"><span class="checkbox__text">Я даю свое согласие на
+							обработку персональных данных в соответствии с <a href="">условиями</a></span></label>
+				</div>
+				<button type="submit" class="button popup__button">Зарегистрироваться</button>
+			</form>
+		</div>
+	</div>
+</div>
