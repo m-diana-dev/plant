@@ -138,3 +138,20 @@ body {
 
 // Подключение стилей отдельных страниц
 @import "home";
+
+.page {
+    &__subtitle {
+		font-weight: 500;
+		font-size: rem(18);
+		line-height: math.div(24,18);
+		color: $mainGreen;
+    }
+
+    &__title {
+		font-family: 'Nunito';
+		font-weight: 700;
+		@include adaptiveValue("font-size", 40, 28);
+		line-height: 1.2;
+		color: $titleColor;
+    }
+}
