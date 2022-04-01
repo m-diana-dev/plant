@@ -352,3 +352,134 @@
 }
 
 //====================================================================================================
+
+.products {
+    text-align: center;
+    @include adaptiveValue("padding-top", 80, 40);
+    @include adaptiveValue("padding-bottom", 80, 40);
+    &__container {
+    }
+
+    &__title {
+        &:not(:last-child) {
+            margin-bottom: rem(24);
+        }
+    }
+
+    &__item {
+    }
+    &__footer{
+        @include adaptiveValue("margin-top", 40, 20); 
+    }
+    &__more{
+
+    }
+}
+.products-tabs {
+
+    &__navigation {
+        display: flex;
+        justify-content: center;
+        @include adaptiveValue("gap",24, 10);
+        @include adaptiveValue("margin-bottom", 48, 25);
+        @media (max-width:$mobileSmall){
+              font-size: rem(14);
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        &._tab-active{
+            color: $mainGreen;
+        }
+    }
+
+    &__content {
+    }
+
+    &__body {
+        &-wrapp{
+            display: grid;
+            gap: rem(24);
+            grid-template-columns: repeat(auto-fit, minmax(rem(270), 1fr));
+            justify-content: space-between;
+            align-items: start;
+        }
+    }
+}
+.products-tabs {
+
+    &__title {
+    }
+}
+.item-products {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    &:nth-child(odd){
+        background: #EAF2E5;
+    }
+    &:nth-child(even){
+        background: #F0EBE6;
+    }
+    &:nth-child(3n+3){
+        background: #E2ECE4;
+    }
+    &:nth-child(4n) {
+        background: #E7EEED;
+    }
+    &__image {
+        display: block;
+        padding: rem(10) rem(65);
+    }
+
+    &__info {
+        padding: 0 rem(30) rem(30) rem(30);
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        .rating {
+            font-size: rem(20);
+            margin-bottom: rem(14);
+            &__active {
+                &::before {
+                    color:  #F4C300;
+                }
+            }
+    
+            &__value {
+                display: none;
+            }
+        }    
+    }
+
+    &__title {
+        display: block;
+        font-family: 'Nunito';
+        font-weight: 600;
+        font-size: rem(24);
+        line-height: math.div(28, 24);
+        color: $titleColor;
+        transition: all 0.3s ease 0s;
+        flex: 1 1 auto;
+        &:not(:last-child) {
+            margin-bottom: rem(10);
+        }
+        @media (any-hover: hover){
+            &:hover{
+                color: $mainGreen;
+            }
+        }
+    }
+
+    &__price {
+        font-family: 'Nunito';
+        font-weight: 700;
+        line-height: math.div(19, 16);
+        color: $titleColor;
+    }
+}
+
+
+//====================================================================================================

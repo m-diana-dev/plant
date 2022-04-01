@@ -1,0 +1,44 @@
+{
+    "products": [
+        {
+            "id": 5,
+            "url": "#",
+            "image": "item-3.png",
+            "title": "Антуриум",
+            "value": 3,
+            "price": "1400"
+        },
+        {
+            "id": 6,
+            "url": "#",
+            "image": "item-1.png",
+            "title": "Антуриум 2",
+            "value": 3,
+            "price": "1400"
+        },
+        {
+            "id": 7,
+            "url": "#",
+            "image": "item-4.png",
+            "title": "Антуриум 3",
+            "value": 3,
+            "price": "1400"
+        },
+        {
+            "id": 8,
+            "url": "#",
+            "image": "item-2.png",
+            "title": "Антуриум 4",
+            "value": 3,
+            "price": "1400"
+        },
+        {
+            "id": 9,
+            "url": "#",
+            "image": "item-3.png",
+            "title": "Антуриум 5",
+            "value": 3,
+            "price": "1400"
+        }
+    ]
+}
